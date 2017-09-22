@@ -1,0 +1,222 @@
+html,body,ul,dl{padding:0;margin:0;}
+a{text-decoration: none;color: black;}
+body{
+	    background-color: #ede7e1;
+}
+div#container{
+	width: 1090px;
+	margin:0 auto;
+}
+ul.Topnav{
+	margin:20px auto;
+	width: 960px;
+	height: 75px;
+	border: 2px solid #dbd6d0;
+	border-top:none;
+}
+ul.Topnav li{
+	box-sizing: border-box;
+	list-style: none;
+	width: 20%;
+	height: 100%;
+	float:left;
+	background-color: #fff;
+	padding: 20px 0 20px 40px;
+}
+ul.Topnav li a{
+	display:block;
+	width: 150px;
+	height: 35px;
+	background-image: url(../images/nav.jpg);
+	border-right: 1px solid #dbd6d0;
+}
+ul.Topnav li:nth-child(1) a{
+	background-position: 0px 0px;
+}
+ul.Topnav li:nth-child(2) a{
+	background-position:0px -35px;
+}
+ul.Topnav li:nth-child(3) a{
+	background-position: 0px -70px;
+}
+ul.Topnav li:nth-child(4) a{
+	background-position: 0px -105px;
+}
+ul.Topnav li:nth-child(5) a{
+	background-position: bottom left;
+	border:none;
+}
+ul.Topnav li:nth-child(1):hover a{
+	background-position: -150px 0px;
+}
+ul.Topnav li:nth-child(2):hover a{
+	background-position:-150px -35px;
+}
+ul.Topnav li:nth-child(3):hover a{
+	background-position: -150px -70px;
+}
+ul.Topnav li:nth-child(4):hover a{
+	background-position: -150px -105px;
+}
+ul.Topnav li:nth-child(5):hover a{
+	background-position: -150px bottom;
+	border:none;
+}
+ul.Topnav li:hover{
+	background-color: #ffedf2;
+}
+div.main{
+	margin:0 auto;
+	width: 960px;
+	height: 1683px;
+	background-color: white;
+}
+div.main div.Asidenav{
+	width: 161px;
+	min-height: 100%;
+	float:left;
+	background-color: #f8f6f4;
+	border-left: 1px solid #dbd6d0;
+	border-right: 1px solid #dbd6d0;
+}
+div.Asidenav div:first-child{
+	width: 100%;
+	height: 12px;
+}
+div.Asidenav a.mainnav{
+	display:block;
+	position:relative;
+	width: 75%;
+	font-size: 18px;
+	padding-left: 25%;
+	height: 40px;
+	line-height: 40px;
+	background-color: #ede7e1;
+	box-shadow: -1px 1px 2px rgba(0,0,0,.2);
+}
+div.Asidenav a:hover{
+	color: #ED145B;
+	text-decoration: underline;
+}
+div.Asidenav a.mainnav::before{
+	width: 40px;
+	height: 50px;
+	background-image: url(../images/nav_title_bg.png);
+	background-repeat: no-repeat;
+	content:'';
+	position:absolute;
+	left:-7px;
+}
+div.Asidenav dt{
+	width: 70%;
+	padding-left: 30%;
+	height: 46px;
+	line-height: 46px;
+	position:relative;
+	border-bottom: 1px solid #dbd6d0;
+		border-top: 1px solid #dbd6d0;
+}
+div.Asidenav dd{
+	display:none;
+}
+div.Asidenav dd{
+	margin:0;
+	background-color: #fff;
+}
+div.Asidenav dd a{
+	display:block;
+	width: 100%;
+	height: 39px;
+	line-height: 39px;
+	font-size: 12px;
+	color:#666;
+	text-align: center;
+	border-bottom: 1px dashed #dbd6d0;
+}
+div.Asidenav dd a:last-child{
+	border-bottom:none;
+}
+div.Asidenav dt b{
+	position:absolute;
+	left:15%;
+	top:43%;
+	display:block;
+	width: 0;
+	height: 0;
+	border:5px solid transparent;
+	border-left:5px solid #aaa;
+}
+div.Asidenav dt:hover b{
+	transform:rotate(90deg);
+}
+.active{
+	background-color: #fff;
+}
+.rotate{
+	transform:rotate(90deg);
+}
+div.Asidenav dt:hover{
+	background-color: #fff;
+}
+div.main div.newslist{
+	width: 797px;
+	height:auto;
+	min-height: 100%;
+	float:left;
+	background-color: white;
+}
+div.main div.newslist div.container{
+	width: 95%;
+	height: auto;
+	min-height: 100%;
+	margin:0 auto;
+	overflow: hidden;
+	background-color: white;
+}
+div.main div.newslist div.container h3{
+	padding:15px;
+	border-bottom: 1px solid #dbd6d0;
+	margin:0;
+}
+div.main div.newslist div.container ul{
+	width: 100%;
+	height: 100%;
+}
+div.newslist div.container li{
+	width: 100%;
+	height: auto;
+	list-style: none;
+	border-bottom:1px dashed black;
+	padding:20px;
+	box-sizing:border-box ;
+}
+div.newslist div.container li:last-child{
+	border-bottom: none;
+}
+div.newslist div.container li span{
+	float:left;
+	margin-right:40px;
+	color: #959595;
+	font-size: 12px;
+}
+div.newslist div.container li div.content{
+	width: 80%;
+	float:left;
+	color:#666;
+	font-size: 13px;
+	line-height: 25px;
+}
+div.newslist div.container li div.content div{
+	margin:10px 0;
+	padding-left: 25px;
+	background: url(../images/quote.gif) left top no-repeat;
+}
+div.newslist div.container li div.content a{
+	color: #ed145b;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 12px;
+}
+div.newslist div.container li div.content a:hover{
+	text-decoration: underline;
+}

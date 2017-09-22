@@ -1,0 +1,391 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+li{
+  list-style: none;
+}
+a{
+    text-decoration: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body {
+    background-color: #ede7e1;font-size: 12px;font-family: Tahoma,Geneva,sans-serif;
+}
+.profile {
+    font-family: Arial;
+    box-shadow: 0 1px 0 #DBD6D0;
+    border: 1px solid #DBD6D0;
+    border-bottom-color: #b7b2ae;
+    margin: 20px auto;
+    overflow: hidden;
+    background: #fff;
+    line-height: 1.5em;
+    font-size: 15px;
+    border-top: 0;
+    width: 1100px;
+    clear: both;
+    color: #666;
+}
+.profile .nav {
+    border-right: 1px solid #dbd6d0;
+    // padding-bottom: 9999px;
+    // margin-bottom: -9999px;
+    background: #f8f6f4;
+    width: 160px;
+    float: left;
+}
+.profile .user-main{
+    float: left;
+    width: 900px;
+    padding:10px;
+}
+.profile .nav .selected {
+    margin-right: -1px;
+    color: #ec1a5b;
+}
+.nav a:hover, .profile .nav .selected {
+    background-color: #fff;
+    text-decoration: none;
+}
+.profile .nav .notice {
+    padding: 10px;
+    background: #fff;
+    overflow: hidden;
+    line-height: 1.8em;
+}
+.nav .notice img {
+    margin-right: 10px;
+    height: 48px;
+    width: 48px;
+    float: left;
+}
+.nav .notice .nickname {
+    font-size: 14px;
+    color: #ed145b;
+    _width: 80px;
+}
+
+.profile .nav .notice .nickname a{
+    padding-left: 0;
+    line-height: 1.8em;
+    color: #ed145b;
+    font-size: 12px;
+}
+.nav .notice p {
+    text-overflow: ellipsis;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    _width: 100%;
+}
+.nav .notice p a{
+    border-bottom: 0;
+}
+.nav .notice .uid {
+    // border-bottom: 1px dashed #ccc;
+    margin-bottom: 10px;
+    line-height: 32px;
+    margin-right: 2px;
+    clear: both;
+}
+.profile .nav h2 {
+    box-shadow: -1px 1px 2px 0 rgba(0,0,0,.2);
+    border-bottom: 1px solid #ccc;
+    font-weight: 400;
+    background: #ede7e1;
+    padding-left: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    // margin-top: -1px;
+    color: #333;
+}
+.profile .nav a {
+    border-bottom: 1px solid #dbd6d0;
+    border-top: 1px solid #fff;
+    padding-left: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    display: block;
+    color: #666;
+}
+.profile h1{
+    border-bottom: 1px solid #dbd6d0;
+    font-weight: 400;
+    position: relative;
+    padding-left: 15px;
+    line-height: 46px;
+    overflow: hidden;
+    font-size: 18px;
+    display: block;
+    color: #333;
+}
+.profile h1 a{
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 16px;
+    float: right;
+    color: #ed145b;
+    text-decoration: none;
+}
+
+//content
+.profile .content {
+    overflow: hidden;
+    padding: 0 15px;
+    margin: 15px 0;
+    position: relative;
+    _width: 760px;
+    height: auto;
+}
+.order_table{
+    width: 800px;
+    padding:10px;
+}
+.profile .filter {
+    // border-bottom: 1px solid #dbd6d0;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    padding: 10px;
+}
+.profile .filter a {
+    border-radius: 3px 3px 0 0;
+    border: 1px solid #dbd6d0;
+    white-space: nowrap;
+    background: #f8f6f4;
+    margin-right: -1px;
+    overflow: visible;
+    min-width: 80px;
+    padding: 0 20px;
+    color: #666;
+    _width: 80px;
+    float: left;
+    border-bottom: 0;
+}
+.profile .filter .curr {
+    padding-bottom: 1px;
+    margin-bottom: -1px;
+    position: relative;
+    background: #fff;
+    color: #ed145b;
+}
+.profile .separator td{
+    border:none;
+}
+#order-list .order_list_title th{
+    line-height: 40px;
+    margin-top:-1px;
+}
+.profile h1, .profile table{
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: normal;
+}
+.order_list_title {
+  background-color: white;
+}
+.separator td {
+  height: 15px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.profile .order_info_td {
+    text-align: left;
+}
+.profile .order_info_td, .profile .order_status_td {
+    line-height: 1.5;
+    padding: 10px;
+    height: auto;
+}
+
+.order_info_td {
+    width: 191px;
+}
+.profile td {
+    padding:5px;
+}
+.profile th,.profile td {
+    border-top: 0;
+    border-left: 0;
+    border: 1px solid #dbd6d0;
+    height: 40px;
+}
+
+.profile .backtotop {
+    border-bottom: 2px solid #E7E7E7;
+    text-align: center;
+    margin-left: 800px;
+    padding-top: 25px;
+    position: fixed;
+    background: #fff;
+    bottom: 100px;
+    height: 55px;
+    width: 80px;color: #ed145b;text-decoration: none;
+}
+#table-header-fixed {
+    width: 769.5px;
+    position: fixed;
+    top: 0px;    left: 306px;
+    display: none;
+    z-index: 2;
+}
+.status_green {
+    color: #8ec52b;
+}
+.package_info {
+    padding-top: 20px;
+}
+.profile td a {
+    display: block;
+    font: 12px '宋体';
+    margin: 12px auto;
+    cursor: pointer;color: #ed145b;
+    text-decoration: none;
+}
+.p_status_green_wraper{
+    text-align: center;
+}
+.content table.tabqiehuan{
+    display: none;
+}
+.tabqiehuan{
+    // padding-top:40px;
+}
+
+.bigtab{
+    display: none;
+}
+.currentBigtab{
+    display: block;
+}
+.tabqiehuan001{
+    padding-left: 10px;
+}
+.tabqiehuan001 tbody td{
+    width: 800px;display: block;
+    height: 500px;
+    padding-left: 100px;
+}
+.tabqiehuan001 tbody td h2{
+    width: 500px;
+    height: 59px;
+    padding-left: 100px;
+    padding-top: 20px;
+    display: inline-block;
+    position: absolute;
+    left: 500px;
+    top: 600px;
+    background: url(../images/user/null_icon.png) no-repeat;
+}
+
+//设置用户中心
+.profile{
+    font-size: 16px;
+}
+.settings-form{
+    height: 10px;
+}
+.avatar_change{
+    position: absolute;
+    right: 150px;
+}
+.avatar_change img{
+    width: 130px;height: 130px;
+}
+.avatar_change a{
+    color: #ed145b;position: absolute;bottom:10px;font-size: 15px;left: 40px;
+}
+.input_container{
+    margin: 20px 0;
+}
+.input_container label{
+    // float: left;
+    width: 110px;display: inline-block;
+    text-align: right;
+    margin-right: 20px;
+    line-height: 30px;
+    color: #666;
+}
+.input_container label span{
+    // vertical-align: baseline;
+    display: inline-block;
+    padding-right: 4px;
+    color: #ed415b;
+}
+.input_container input{
+    line-height: 1.5;padding: 5px;
+    height: 1.5em;border-color: red;outline: none;
+}
+.input_container .valueMissing,.input_container .customError{
+    background: #FEDDDF url('../images/user/icon_error.png') no-repeat 6px center;
+    border: 1px solid #FB0219;display: inline-block;
+    padding: 0 10px 0 30px;margin-left: 20px;
+    // vertical-align: middle;
+    line-height: 28px;
+    display: none;
+    color: #333;
+}
+.input_container .valueMissing{
+    position: absolute;
+}
+
+.formlist{
+    height: 40px;margin: 20px 0;line-height: 40px;
+}
+.formlist dt, .datalist dt {
+    text-align: right;
+    width: 110px;
+    clear: both;
+    float: left;
+}
+.formlist dd, .datalist dd {
+    margin: 0 0 0 130px;
+    font-weight: 400;
+}
+.formlist dd .btn_mid_pink,.act input{
+    text-shadow: 1px 1px 3px #b9154a;
+    display: inline-block;
+    background: linear-gradient(to bottom,#f4769d,#ec195c);
+    font-weight: 400;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0 15px;
+    height: 32px;
+    color: #fff;
+    border: 0;
+    margin: 0 100px;
+}
+.formlist dd a{
+    color:#ec195c;
+    margin: 0 20px 0 70px;
+}
+.formlist dd .hint{
+    color: silver;
+}
+
+//生日
+
+
+.input_container label.checkbox{
+    width: 200px;
+}
+textarea {
+    vertical-align: top;
+}
+.comment_tip {
+    position: absolute;
+    right: 130px;
+    margin-right: 130px;
+    margin-top: 10px;
+}
+.status_red {
+    color: #ed145b;padding-left: 100px;margin-top: 10px;
+}

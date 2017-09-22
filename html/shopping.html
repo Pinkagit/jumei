@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="../css/shopping.css">
+    <script src="../js/jquery-1.11.1.js"></script>
+    <script src="../js/shopping.js"></script>
+</head>
+<body>
+    <div id="shopping_header">
+        <div class="cart_top">
+            <div class="user_box" id="JS_user_box">
+                欢迎您，<a href="">xxxxxxx</a>"&nbsp;"<a href="" class="out">[退出]</a>
+                <i class="tips">|</i><a href="" class="query">订单查询</a>
+            </div>
+        </div>
+        <div class="cart_header_box">
+            <div class="cart_header clearfix">
+                <h1 class="logo_box"><a href=""><img src="../images/cart_logo.jpg" alt="化妆品团购"></a></h1>
+                <div class="order_path"></div>
+            </div>
+        </div>
+    </div>
+    <div class="content_show_wrapper">
+        <div class="groub_show">
+            <div class="content_header clearfix">
+                <div class="cart_time_wrapper">
+                    <i class="icon_small png"></i>
+                    <span class="cart_timer_out">
+                        已超过购物车商品保留时间，请尽快结算。[
+                        <a href="" class="cart_timer_tip float_box">
+                            ?
+                            <div class="pop_box">
+                                <span class="arrow_t_1"><span class="arrow_t_2"></span></span>
+                                <div class="timer_tip_text"> 由于商品库存有限，我们只能暂为您最多保存20分钟，<br>20分钟后购物车将被清空，请尽快结算订单。 </div>
+                            </div>
+                            </a> ]
+                        </span>
+                </div>
+                <div class="top_banner">
+                    <ul class="header_icons">
+                        <li><span><i class="icon_zhenpin header_icon"></i>真品防伪码</span></li>
+                        <li><span><i class="icon_tuihuo header_icon"></i>30天无条件退货</span></li>
+                        <li><span><i class="icon_baoyou header_icon"></i>美妆满2件或299元包邮</span></li>
+                    </ul>
+                </div>
+                <div class="common_shippment"><i class="icon_small icon_baoyou">包邮</i>新用户首单满39元包邮，第三方入驻商家单订单满159元包邮</div>
+            </div>
+            <div class="groub_wrapper">
+                <table class="cart_groub_item">
+                    <thead>
+                        <tr>
+                            <th class="cart_overview">
+                                <div class="cart_groub_header">
+                                    <input type="checkbox" class="js_goods_selector cart_groub_selector" checked="checked">
+                                    <h2>名品特卖</h2>
+                                </div>
+                            </th>
+                            <th class="cart_price">聚美价（元）</th>
+                            <th class="cart_num">数量</th>
+                            <th class="cart_total">小计（元）</th>
+                            <th class="cart_option">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="cart_item">
+                            <td valign="top">
+                                <div class="cart_item_desc clearfix">
+                                    <input type="checkbox" class="js_goods_selector cart_item_selector" checked="checked">
+                                    <div class="cart_item_desc_wrapper">
+                                        <a href="" class="cart_item_pic" target="_blank">
+                                            <img src="../images/3527664_60_60.jpg" alt="男篮球鞋11631105-4">
+                                            <span class="sold_out_pic"></span>
+                                        </a>
+                                        <a href="" class="cart_item_link" title="男篮球鞋11631105-4" target="_blank">男篮球鞋11631105-4</a>
+                                        <p class="sku_info">型号：<span class="cart_item_attribute">宝蓝+黑+荧光超级橙</span>&nbsp;容量：<span class="cart_item_capactiy">42</span></p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cart_item_price">
+                                    <p class="jumei_price">229.00</p>
+                                    <p class="market_price">449.00</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cart_item_num">
+                                    <div class="item_quantity_editer clearfix">
+                                        <span class="decrease_one disabled">-</span>
+                                        <input type="text" value="1" class="item_quantity">
+                                        <span class="increase_one">+</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cart_item_total">
+                                    <p class="item_total_price">229.00</p>
+                                    <p>省<span class="item_saved_price">220.00</span></p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cart_item_option">
+                                    <a class="icon_small delete_item" title="删除"></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="cart_item">
+                            <td valign="top">
+                                <div class="cart_item_desc clearfix">
+                                    <input type="checkbox" class="js_goods_selector cart_item_selector" checked="checked">
+                                    <div class="cart_item_desc_wrapper">
+                                        <a href="" class="cart_item_pic" target="_blank">
+                                            <img src="../images/3552978_60_60.jpg" alt="男篮球鞋ABAM007-1">
+                                            <span class="sold_out_pic"></span>
+                                        </a>
+                                        <a href="" class="cart_item_link" title="男篮球鞋ABAM007-1" target="_blank">男篮球鞋ABAM007-1</a>
+                                        <p class="sku_info">型号：<span class="cart_item_attribute">蓝+果粉+新基础黑</span>&nbsp;容量：<span class="cart_item_capacity">40</span></p>
+                                        <div class="sale_info clearfix"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cart_item_price">
+                                    <p class="jumei_price">328.00</p>
+                                    <p class="market_price">569.00</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cart_item_num">
+                                    <div class="item_quantity_editer clearfix">
+                                        <span class="decrease_one disabled">-</span>
+                                        <input type="text" value="1" class="item_quantity">
+                                        <span class="increase_one">+</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cart_item_total">
+                                    <p class="item_total_price">328.00</p>
+                                    <p>省<span class="item_saved_price">241.00</span></p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cart_item_option">
+                                    <a class="icon_small delete_item" title="删除"></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5">商品价格：<span id="Company_groub">￥</span><span class="groub_total_price">00.00</span></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <table class="cart_groub_item cart_groub_item_global">
+                    <thead>
+                        <tr>
+                            <th class="cart_overview">
+                                <div class="cart_groub_header">
+                                    <input type="checkbox" class="js_goods_selector cart_groub_selector" checked="checked">
+                                    <h2>洛杉矶001号仓库发货</h2>
+                                </div>
+                            </th>
+                            <th class="cart_price">聚美价（元）</th>
+                            <th class="cart_num">数量</th>
+                            <th class="cart_total">小计（元）</th>
+                            <th class="cart_option">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="cart_item">
+                            <td valign="top">
+                                <div class="cart_item_desc clearfix">
+                                    <input type="checkbox" class="js_goods_selector cart_item_selector" checked="checked">
+                                    <div class="cart_item_desc_wrapper">
+                                        <a href="" class="cart_item_pic" target="_blank">
+                                            <img src="../images/2894340_60_60.jpg" alt="Air Jordan IX Retro Low AJ9 男鞋 北卡蓝限量 低帮篮球鞋 832822-401">
+                                            <span class="sold_out_pic"></span>
+                                        </a>
+                                        <a href="" class="cart_item_link" title="Air Jordan IX Retro Low AJ9 男鞋 北卡蓝限量 低帮篮球鞋 832822-401" target="_blank">Air Jordan IX Retro Low AJ9 男鞋 北卡蓝限量 低帮篮球鞋 832822-401</a>
+                                        <p class="sku_info">型号：<span>蓝色&nbsp;容量：</span><span>42</span></p>
+                                        <div class="sale_info clearfix"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cart_item_price">
+                                    <p class="jumei_price">1237.00</p>
+                                    <p class="market_price"></p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cart_item_num">
+                                    <div class="item_quantity_editer clearfix">
+                                        <span class="decrease_one disabled">-</span>
+                                        <input type="text" value="1" class="item_quantity">
+                                        <span class="increase_one">+</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cart_item_total">
+                                    <p class="item_total_price">1237.00</p>
+                                    <p style="display: none;">省<span class="item_saved_price"></span></p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cart_item_option">
+                                    <a class="icon_small delete_item" title="删除"></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5">商品金额：<span id="Company_groub">￥</span><span class="groub_total_price">00.00</span></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="common_handler">
+                <div class="right_handler">共<span class="total_amount">3</span>&nbsp;件商品&nbsp;&nbsp;商品应付总额：<span id="Company">￥</span><span class="total_price">00.00</span>
+                    <a href="" class="btn" id="go_to_order">去结算</a>
+                </div>
+                <label for="" class="cart_all_selector_wrapper">
+                    <input type="checkbox" id="js_all_selector" class="js_all_selector all_selector" checked="checked">全选
+                </label>
+                <a href="" class="go_back_shopping">继续购物</a>
+                <span class="seperate_line">|</span>
+                <a  class="clear_cart_all">清空全部商品</a>
+            </div>
+            <div class="content_footer clearfix">
+                <div class="cart_time_wrapper cart_out_of_time">
+                    <i class="icon_small"></i>
+                    <span class="cart_timer_out">已超过购物车商品保留时间，请尽快结算。</span>
+                    [
+                    <a href="" class="cart_timer_tip float_box">
+                        ?
+                        <div class="pop_box">
+                            <span class="arrow_t_1"><span class="arrow_t_2"></span></span>
+                            <div class="timer_tip_text"> 由于商品库存有限，我们只能暂为您最多保存20分钟，<br>20分钟后购物车将被清空，请尽快结算订单。 </div>
+                        </div>
+                    </a>
+                    ]
+                </div>
+            </div>
+        </div>
+        <!-- <div id="cart_side_nav"><a href=""></a></div> -->
+    </div>
+    <!-- <div id="cart_side_nav"><a href=""></a></div> -->
+    <div class="recommend_box" id="JS_recommend_box">
+        <div class="nav_tips">
+            <a href="" class="JS_recommend_nav active">今日备受欢迎</a>
+        </div>
+        <div>
+            <ul class="clearfix JS-recommend_cont">
+                <li class="list">
+                    <div>
+                        <div><a href="" target="_blank"><img src="../images/3365132_160_160.jpg" width="160px" height="160px" alt=""></a></div>
+                        <div class="tips_info_box"><a href="" target="_blank" class="tips_info"><span class="discount">3.7折</span>韩国·AHC高浓缩B5玻尿酸水乳套装，让你不做美容也能润到掐出水！</a></div>
+                        <div class="price_grey"><span class="price">￥168.0</span><span class="grey">￥455.0</span></div>
+                        <div><a href="" class="cart_btn JS_add_cart_btn">加入购物车</a></div>
+                    </div>
+                </li>
+                <li class="list">
+                    <div>
+                        <div><a href="" target="_blank"><img src="../images/2394266_160_160.jpg" width="160px" height="160px" alt=""></a></div>
+                        <div class="tips_info_box"><a href="" target="_blank" class="tips_info"><span class="discount"></span>法国•【逆龄活肤液】赫莲娜 (HR)明星绿宝瓶精华,带你突破护肤“瓶颈”!</a></div>
+                        <div class="price_grey"><span class="price">￥799.0</span><span class="grey"></span></div>
+                        <div><a href="" class="cart_btn JS_add_cart_btn">加入购物车</a></div>
+                    </div>
+                </li>
+                <li class="list">
+                    <div>
+                        <div><a href="" target="_blank"><img src="../images/1713158_160_160.jpg" width="160px" height="160px" alt=""></a></div>
+                        <div class="tips_info_box"><a href="" target="_blank" class="tips_info"><span class="discount">3.7折</span>  一叶子面膜礼遇补水舒润礼盒20片，让肌肤大口“喝水”。</a></div>
+                        <div class="price_grey"><span class="price">￥87.0</span><span class="grey">￥229.0</span></div>
+                        <div><a href="" class="cart_btn JS_add_cart_btn">加入购物车</a></div>
+                    </div>
+                </li>
+                <li class="list">
+                    <div>
+                        <div><a href="" target="_blank"><img src="../images/1842932_160_160.jpg" width="160px" height="160px" alt=""></a></div>
+                        <div class="tips_info_box"><a href="" target="_blank" class="tips_info"><span class="discount">7.5折</span>自然堂雪域精粹清透补水保湿套装，柔滑肌肤，焕发水嫩光彩。</a></div>
+                        <div class="price_grey"><span class="price">￥345.0</span><span class="grey">￥461.0</span></div>
+                        <div><a href="" class="cart_btn JS_add_cart_btn">加入购物车</a></div>
+                    </div>
+                </li>
+                <li class="list">
+                    <div>
+                        <div><a href="" target="_blank"><img src="../images/2275565_160_160.jpg" width="160px" height="160px" alt=""></a></div>
+                        <div class="tips_info_box"><a href="" target="_blank" class="tips_info"><span class="discount">5.8折</span>自然堂凝时鲜颜肌活水乳特惠套装，呈现水嫩鲜活肌。</a></div>
+                        <div class="price_grey"><span class="price">￥318.0</span><span class="grey">￥548.0</span></div>
+                        <div><a href="" class="cart_btn JS_add_cart_btn">加入购物车</a></div>
+                    </div>
+                </li>
+                <li class="list">
+                    <div>
+                        <div><a href="" target="_blank"><img src="../images/20605_160_160.jpg" width="160px" height="160px" alt=""></a></div>
+                        <div class="tips_info_box"><a href="" target="_blank" class="tips_info"><span class="discount">5.7折</span>日本•芙丽芳丝净润洗面霜100g，清洁舒爽，紧致润滑！</a></div>
+                        <div class="price_grey"><span class="price">￥85.0</span><span class="grey">￥150.0</span></div>
+                        <div><a href="" class="cart_btn JS_add_cart_btn">加入购物车</a></div>
+                    </div>
+                </li>
+                <li class="list">
+                    <div>
+                        <div><a href="" target="_blank"><img src="../images/2431238_160_160.jpg" width="160px" height="160px" alt=""></a></div>
+                        <div class="tips_info_box"><a href="" target="_blank" class="tips_info"><span class="discount"></span>日本•【闭口克星】ipsa茵芙纱流金水，一敷一拍，跟闭口说“再见”！</a></div>
+                        <div class="price_grey"><span class="price">￥296.0</span><span class="grey"></span></div>
+                        <div><a href="" class="cart_btn JS_add_cart_btn">加入购物车</a></div>
+                    </div>
+                </li>
+                <li class="list">
+                    <div>
+                        <div><a href="" target="_blank"><img src="../images/2070658_160_160.jpg" width="160px" height="160px" alt=""></a></div>
+                        <div class="tips_info_box"><a href="" target="_blank" class="tips_info"><span class="discount">8.3折</span>日本•Platinum Label大瓶薏仁水1000ML，大容量不心疼，涂脸涂身随便用！</a></div>
+                        <div class="price_grey"><span class="price">￥48.0</span><span class="grey">￥58.0</span></div>
+                        <div><a href="" class="cart_btn JS_add_cart_btn">加入购物车</a></div>
+                    </div>
+                </li>
+                <li class="list">
+                    <div>
+                        <div><a href="" target="_blank"><img src="../images/3629654_160_160.jpg" width="160px" height="160px" alt=""></a></div>
+                        <div class="tips_info_box"><a href="" target="_blank" class="tips_info"><span class="discount">7折</span>阿芙提亮补水面膜套装，提亮肤色、改善暗哑、水嫩柔滑。</a></div>
+                        <div class="price_grey"><span class="price">￥199.0</span><span class="grey">￥284.0</span></div>
+                        <div><a href="" class="cart_btn JS_add_cart_btn">加入购物车</a></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

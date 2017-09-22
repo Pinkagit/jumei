@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <script src="../js/jquery-1.11.1.js"></script>
+    <script src="../js/jquery.validate.min.js"></script>
+    <script src="../js/login.js"></script>
+</head>
+<body>
+    <div id="header_container">
+        <div id="logo">
+            <a href="" id="home"></a>
+            <div class="header_logo_box">
+                <a href="" class="top_link_lighting"></a>
+                <a href="" class="top_link_shipping"></a>
+                <a href="" class="top_link_code"></a>
+            </div>
+        </div>
+    </div>
+    <div class="sign">
+        <div class="loginWrap loginWrapVerify">
+            <div class="loginImage"></div>
+            <div class="loginBord">
+                <div class="loginTit">
+                    <div class="tosignup">还没有聚美帐号？<a href="">30秒注册</a></div>
+                    <h1><strong>登录聚美</strong></h1>
+                </div>
+                <div class="radio-wrap">
+                    <span>
+                        <input type="radio" name="method" value="dynamic" id="radio_dynamic" checked="checked">
+                        <label for="radio_dynamic">手机动态密码登录</label>
+                    </span>
+                    <span>
+                        <input type="radio" name="method" value="normal" id="radio_normal">
+                        <label for="radio_normal">普通登录</label>
+                    </span>
+                </div>
+                <form id="login-dynamic-form" style="display:block;">
+                    <div class="textbox_ui user">
+                        <input type="text" id="dynamic_mobile"  value="" placeholder="已注册的手机号码"  name="userphone">
+                        <!-- <div id="userphone-input-error" class="input-error">手机号码格式有误</div> -->
+                        <div class="focus_text">请输入11位手机号码</div>
+                        <div id="invalid"><!-- <i></i> --><div name="msg"></div></div>
+                    </div>
+                    <div class="dynamic_pass_wrap">
+                        <div class="textbox_ui dynamic_pass pass">
+                            <input type="text" id="dynamic_password" placeholder="动态密码"  name="code">
+                            <!-- <div id="dynamicpassword-input-error" class="input-error">请输入6位手机动态密码</div> -->
+                            <div class="focus_text">请点击获取手机动态密码</div>
+                            <div id="invalid"><!-- <i></i> --><div name="msg"></div></div>
+                        </div>
+                        <a href="" id="getPhoneCode" class="phonecode"><strong>获取手机动态密码</strong></a>
+                    </div>
+                    <p>
+                    <label for="dynamic_auto_login">
+                        <input type="checkbox" id="dynamic_auto_login" checked="">&nbsp;自动登录
+                    </label>
+                    </p>
+                    <input type="submit" class="loginbtn submit_btn" value="登录" />
+                </form>
+                <form action="" id="login-user-form" method="post" style="display: none;">
+                    <div class="textbox_ui user">
+                        <input type="text" id="dynamic_mobile" value="" placeholder="已验证手机/邮箱/用户名" autocomplete="off">
+                        <div class="focus_text">请输入登录名，登录名可能是您的手机号，邮箱或用户名</div>
+                    </div>
+                    <div class="textbox_ui pass">
+                        <input type="password" id="login_password" autocomplete="off" placeholder="密码">
+                        <div class="focus_text">请输入您的密码，您的密码可能为字母，数字或符号的组合</div>
+                    </div>
+                    <div class="aliyunWrap textbox_ui">
+                        <div id="nc_1_wrapper" class="nc_wrapper">
+                            <div id="nc_1_n1t" class="nc_scale">
+                                <div id="nc_1_bg" class="nc_bg"></div>
+                                <span id="nc_1_n1z" class="nc_iconfont btn_ok"></span>
+                                <div id="nc_1_scale_text" class="scale_text slidetounlock">
+                                    <span class="nc-lang-cnt">请按住滑块，拖动到最右边</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        <a href="" class="fr">忘记密码?</a>
+                        <label for="auto_login">
+                            <input type="checkbox" id="dynamic_auto_login" checked="">&nbsp;自动登录
+                        </label>
+                    </p>
+                    <input type="submit" class="loginbtn submit_btn" value="登录" />
+                </form>
+                <div class="iconAccout">
+                    <div>你也可以用以下帐号登录</div>
+                    <p>
+                        <a href="" class="a1" title="QQ">QQ</a>
+                        <a href="" class="a2" title="支付宝">支付宝</a>
+                        <a href="" class="a3" title="新浪微博">新浪微博</a>
+                        <a href="" class="a4" title="360">360</a>
+                        <a href="" class="a5" title="百度">百度</a>
+                        <span>更多<i></i></span>
+                    </p>
+                    <p class="icon-p" style="display: none;">
+                        <a href="" class="a6" title="微信">微信</a>
+                        <a href="" class="a7" title="人人">人人</a>
+                        <a href="" class="a8" title="蘑菇街">蘑菇街</a>
+                        <a href="" class="a9" title="团800">团800</a>
+                    </p>
+                </div>
+                <div class="shadowl"></div>
+                <div class="shadowr"></div>
+            </div>
+        </div>
+    </div>
+    <div id="footer_container" class="footer_white" style="padding-top:5px;background:none;border-top: none;">
+        <div class="footer_con" id="footer_copyright">
+            <p class="footer_copy_con">
+                Copyright©2010-2015北京创锐文化传媒有限公司Jumei.com保留一切权利。客服热线：400-123-8888
+                <br>
+                京公网安备 11010102001226 号 | <a href="" target="_blank" rel="nofollow">京ICP证111033号</a> | 食品流通许可证 SP1101051110165515（1-1） | <a href="" target="_blank" rel="nofollow">营业执照</a>
+            </p>
+            <p>
+                <a href="" class="footer_copy_logo logo01" rel="nofollow"></a>
+                <a href="" class="footer_copy_logo logo02" rel="nofollow"></a>
+                <a href="" class="footer_copy_logo logo03" rel="nofollow"></a>
+                <a href="" class="footer_copy_logo logo04" rel="nofollow"></a>
+                <a href="" class="footer_copy_logo logo05" rel="nofollow"></a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

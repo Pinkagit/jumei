@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>美妆商城 - 聚美优品</title>
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="fonts/icomoon/style2.css">
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jm-mzsc2.css">
+	<script src="js/jquery-1.11.1.js"></script>
+	<script src="js/frame.js"></script>
+  <script src='js/jm-mzsc1.js'></script>
+   <script src='js/jm-mzsc2.js'></script>
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+	<!-- <div id="header" style="margin:0 auto;position:absoult;">
+	    <iframe src="header.html" height="600px" width="100%" style="position:absoult;overflow:hidden;margin:0 auto"  frameborder="0"></iframe>
+	</div>
+	<div id="footer" style="margin:0 auto;">
+	    <iframe src="footer.html" height="800px" width="100%" style="overflow:hidden;margin:0 auto"  frameborder="0"></iframe>
+	</div> -->
+	<header>
+      <div id="meizhuan_server">
+           <div class="container">
+                <img src="images/meizhuan_server01.png" alt="">
+               <input type="text">
+               <span id="mz_server">搜美妆</span>
+           </div>
+      </div>
+      <div class="headerTop">
+        <div class="top_box">
+          <ul class="top_box_left">
+            <li>欢迎来到聚美！</li>
+            <li><a href="html/login.html">请登录</a></li>
+            <li><a href="html/register.html">快速注册</a></li>
+          </ul>
+          <ul class="top_box_right">
+            <li><a href="#">正品保证</a></li>
+            <li><a href="#">订单查询</a></li>
+            <li><a href="#"><span class="icon_heart_11"></span>收藏的品牌</a></li>
+            <li class="myJM">
+              <a href="html/user.html">我的聚美<i class="small_img_rotate"></i></a>
+              <div class="sub_nav">
+                <ul>
+                    <li><a>我的订单</a></li>
+                    <li><a>我的现金券</a></li>
+                    <li><a>我的红包</a></li>
+                    <li><a>我的余额</a></li>
+                    <li><a>我的提现退款</a></li>
+                    <li><a>我的收藏</a></li>
+                    <li><a>我的心愿单</a></li>
+                    <li><a>会员中心</a></li>
+                    <li><a>礼品卡兑换</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><span class="icon_mobile2-11"></span><a href="html/phone.html">手机聚美</a></li>
+            <li class="more_more">
+              <a href="#">更多<i class="small_img_rotate"></i></a>
+              <div class="sub_nav">
+                  <ul>
+                    <li><a>邀请好友</a></li>
+                    <li><a><i class="bottomline">加入收藏</i></a></li>
+                    <li><a class="er_box" rel="nofollow" target="_blank">新浪微博<span style="display: none;"><img src="images/sina_er.png"></span></a></li>
+                    <li><a class="er_box">聚美微信<span style="display: none;"><img src="images/jumei_weixin_header1.png"></span></a></li>
+                    <li><a class="er_box" target="_blank">百度贴吧</a></li>
+                    <li><a href="#" class="er_box" target="_blank">腾讯微博<span style="display: none;"><img src="images/qq_er.png"></span></a></li>
+                    <li><a href="#" class="er_box" rel="nofollow" target="_blank">人人公众主页<span style="display: none;"><img src="images/renren_er.png"></span></a></li>
+                  </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="headerCenter">
+        <div class="center_box">
+          <div class="logo"><a href="#"></a></div>
+          <div class="search_box">
+            <form action="">
+              <input type="text">
+              <button>搜索</button>
+            </form>
+            <div class="search_result_mune">
+              <div><a href="#"><span>补水</span><i>约2730件</i></a></div>
+              <div><a href="#"><span>洁面</span><i>约1058件</i></a></div>
+              <div><a href="#"><span>面膜</span><i>约885件</i></a></div>
+              <div><a href="#"><span>眼霜</span><i>约328件</i></a></div>
+              <div><a href="#"><span>爽肤水</span><i>约893件</i></a></div>
+              <div><a href="#"><span>口红</span><i>约475件</i></a></div>
+              <div><a href="#"><span>粉饼</span><i>约33件</i></a></div>
+              <div><a href="#"><span>卸妆</span><i>约304件</i></a></div>
+              <div><a href="#"><span>隔离</span><i>约191件</i></a></div>
+            </div>
+            <div class="hot_search">
+              <ul>
+                <li><a href="#">保湿</a></li>
+                <li><a href="#">面膜</a></li>
+                <li><a href="#">洗面奶</a></li>
+                <li><a href="#">补水</a></li>
+                <li><a href="#">香水</a></li>
+                <li><a href="#">眼霜</a></li>
+                <li><a href="#">口红</a></li>
+                <li><a href="#">护肤套装</a></li>
+                <li><a href="#">BB霜</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="car_box">
+            <a href="html/shopping.html">
+              <img src="images/car_cart.gif" alt="">
+              <span>去购物车结算
+                <i class="icon-expand_more"></i>
+                <div class="cart_box_content">购物车中还没有商品，<br>快去挑选心爱的商品吧！</div>
+              </span>
+            </a>
+            <div class="car_hidden">
+              <p>&nbsp;购物车中还没有商品,<br>快去挑选心爱的商品吧!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="headerBottom">
+        <div class="bottom_box">
+          <nav class="clearfix">
+            <ul>
+              <li><a href="#">首页</a></li>
+              <li><a href="#">极速免税店</a></li>
+              <li><a href="#">母婴特卖</a></li>
+              <li class="meizhuang">
+                <a href="index.html">美妆商城<i class="icon-expand_more" style="    top:19px;"></i></a>
+                <div class="meizhuangshangchengerji" style="border:1px solid #eee;border-top:transparent;position: absolute;left:50%;width: 1090px;z-index:400;background:#fff;margin-left:-550px;padding-top:20px;display:none;">
+                  <div class="mz_imglist">
+                    <a target="_blank" href="#"><img src="images/meizhuang01.jpg" /></a>
+                    <a target="_blank" href="#"><img src="images/meizhuang02.jpg" /></a>
+                  </div>
+                  <div class="mz_inner clearfix">
+                      <dl style="border-right:1px dashed #ccc;border-bottom:1px dashed #ccc;">
+                          <dt class="item_int png" style="background-position: 5px -170px;"><a>国际大牌</a></dt>
+                          <dd><a href="#" target="_blank">兰蔻</a></dd>
+                          <dd><a href="#" target="_blank">娇韵诗</a></dd>
+                          <dd><a href="#" target="_blank">伊丽莎白雅顿</a></dd>
+                          <dd><a href="#" target="_blank">雅诗兰黛</a></dd>
+                          <dd><a href="#" target="_blank">欧莱雅</a></dd>
+                          <dd><a href="#" target="_blank">兰芝</a></dd>
+                          <dd><a href="#" target="_blank">倩碧</a></dd>
+                          <dd><a href="html/聚美优品产品列表.html">SK-II</a></dd>
+                          <dd><a href="#" target="_blank">雅漾</a></dd>
+                          <dd><a href="#" target="_blank">菲诗小铺</a></dd>
+                          <dd><a href="#" target="_blank">悦诗风吟</a></dd>
+                      </dl>
+                      <dl style="border-right:1px dashed #ccc;border-bottom:1px dashed #ccc;">
+                          <dt class="item_hufu png" style="background-position: 10px 4px;"><a href="#" target="_blank"> 护肤</a></dt>
+                          <dd><a href="#" target="_blank">洁面</a></dd>
+                          <dd><a href="#" target="_blank">爽肤水</a></dd>
+                          <dd><a href="#" target="_blank">精华</a></dd>
+                          <dd><a href="#" target="_blank">乳液</a></dd>
+                          <dd><a href="#" target="_blank">面霜</a></dd>
+                          <dd><a href="#" target="_blank">眼霜</a></dd>
+                          <dd><a href="#" target="_blank">面膜</a></dd>
+                          <dd><a href="#" target="_blank">护肤套装</a></dd>
+                      </dl>
+                      <dl style="border-bottom:1px dashed #ccc;">
+                          <dt class="item_caizhuang png"  style="background-position: 10px -22px;"><a href="#" target="_blank">彩妆</a></dt>
+                          <dd><a href="#" target="_blank">卸妆</a></dd>
+                          <dd><a href="#" target="_blank">BB霜</a></dd>
+                          <dd><a href="#" target="_blank">粉底液</a></dd>
+                          <dd><a href="#" target="_blank">粉饼</a></dd>
+                          <dd><a href="#" target="_blank">眼影</a></dd>
+                          <dd><a href="#" target="_blank">眼线笔</a></dd>
+                          <dd><a href="#" target="_blank">睫毛膏</a></dd>
+                          <dd><a href="#" target="_blank">眉笔</a></dd>
+                          <dd><a href="#" target="_blank">口红</a></dd>
+                          <dd><a href="#" target="_blank">腮红</a></dd>
+                      </dl>
+                      <dl style="border-right:1px dashed #ccc;">
+                          <dt class="item_xiangfen png" style="background-position: 8px -113px;"><a href="#" target="_blank">香氛</a></dt>
+                          <dd><a href="#" target="_blank">女士香水</a></dd>
+                          <dd><a href="#" target="_blank">男士香水</a></dd>
+                          <dd><a href="#" target="_blank">中性香水</a></dd>
+                          <dd><a href="#" target="_blank">Q版香水</a></dd>
+                          <dd><a href="#" target="_blank">香水套装</a></dd>
+                          <dd><a href="#" target="_blank">精油</a></dd>
+                      </dl>
+                      <dl style="border-right:1px dashed #ccc;">
+                          <dt class="item_nanshi png" style="background-position: 10px -140px;"><a href="#" target="_blank">男士专区</a></dt>
+                          <dd><a href="#" target="_blank">洁面</a></dd>
+                          <dd><a href="#" target="_blank">爽肤水</a></dd>
+                          <dd><a href="#" target="_blank">面霜</a></dd>
+                          <dd><a href="#" target="_blank">精华</a></dd>
+                          <dd><a href="#" target="_blank">护肤套装</a></dd>
+                          <dd><a href="#" target="_blank">洗发</a></dd>
+                          <dd><a href="#" target="_blank">沐浴</a></dd>
+                      </dl>
+                      <dl>
+                          <dt class="item_hot png" style="background-position: 10px -88px;"><a>热门搜索</a></dt>
+                          <dd><a href="#" target="_blank">面膜贴</a></dd>
+                          <dd><a href="#" target="_blank">洗面奶</a></dd>
+                          <dd><a href="#" target="_blank">唇膏</a></dd>
+                          <dd><a href="#" target="_blank">去黑头</a></dd>
+                          <dd><a href="#" target="_blank">祛斑</a></dd>
+                          <dd><a href="#" target="_blank">隔离</a></dd>
+                          <dd><a href="#" target="_blank">祛痘</a></dd>
+                          <dd><a href="#" target="_blank">去角质</a></dd>
+                          <dd><a href="#" target="_blank">指甲油</a></dd>
+                      </dl>
+                  </div>
+                </div>
+              </li>
+              <li><a href="#">国际轻奢</a></li>
+              <li><a href="#">服装运动</a></li>
+              <li><a href="html/xbsp.html">鞋包配饰</a></li>
+            </ul>
+          </nav>
+          <div class="nav_right_list">
+            <ul>
+              <li style="left:0px;"><a href="#"><img src="images/nav_right_list01.jpg" alt=""><span style="left:-30px;">品牌防伪码</span></a></li>
+              <li style="left:50px;"><a href="#"><img src="images/nav_right_list02.jpg" alt=""><span>美妆30天无理由退货</span></a></li>
+              <li style="left:100px;"><a href="#"><img src="images/nav_right_list03.jpg" alt=""><span>美妆满2件或299包邮</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </header>
+
+ <div id="meizhuan" style="margin:0 auto;">
+  <iframe src="html/meizhuan.html" height="890px" width="100%" style="margin:0 auto;" frameborder="0"></iframe>
+ </div>
+
+ <section id="huodon" style="overflow:hidden;">
+  <div class="container">
+    <div class="ongoing_title"></div>
+    <ul class="ongoing_activity" id="ongoing_a">
+      <li>
+        <div class="loading" style="position: relative;background: #fff;width:100%;height:100%;overflow: hidden;z-index: 999;">
+          <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+          </div>
+        </div>
+        <a href="">
+          <div class="big_img">
+            <img data-src="images/ongoing_01.jpg" alt="">
+            <p class="count_time"></p>
+          </div>
+          <div class="desc_area">
+            <div class="left_area">
+              <p class="ongoing_item_title">悦诗风吟旗舰店</p>
+              <p class="ongoing_item_sub_title">来自济州岛的自然恩赐</p>
+              <p class="ongoing_item_discount_desc">满<em>500</em>送<em>6</em>件套</p>
+            </div>
+            <div class="right_area">
+              <img data-src="images/ongoing_01_s.jpg" alt="">
+            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <div class="loading" style="position: relative;background: #fff;width:100%;height:100%;overflow: hidden;z-index: 999;">
+          <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+          </div>
+        </div>
+      <a href="">
+        <div class="big_img">
+          <p class="count_time"></p>
+          <img data-src="images/ongoing_02.jpg" alt=""></div>
+        <div class="desc_area">
+          <div class="left_area">
+            <p class="ongoing_item_title">一叶子旗舰店</p>
+            <p class="ongoing_item_sub_title">新鲜的力量</p>
+            <p class="ongoing_item_discount_desc">满<em>179</em>保湿三组件</p>
+          </div>
+          <div class="right_area">
+            <img data-src="images/ongoing_02_s.jpg" alt="">
+          </div>
+        </div>
+      </a></li>
+      <li>
+        <div class="loading" style="position: relative;background: #fff;width:100%;height:100%;overflow: hidden;z-index: 999;">
+          <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+          </div>
+        </div>
+      <a href="">
+        <div class="big_img">
+          <p class="count_time"></p>
+          <img data-src="images/ongoing_03.jpg" alt="">
+        </div>
+        <div class="desc_area">
+          <div class="left_area">
+            <p class="ongoing_item_title">兰芝旗舰店</p>
+            <p class="ongoing_item_sub_title">闪耀水漾美肌</p>
+            <p class="ongoing_item_discount_desc">满<em>599</em>赠<em>4</em>件套</p>
+          </div>
+          <div class="right_area">
+            <img data-src="images/ongoing_03_s.jpg" alt="">
+          </div>
+        </div>
+      </a></li>
+      <li>
+        <div class="loading" style="position: relative;background: #fff;width:100%;height:100%;overflow: hidden;z-index: 999;">
+          <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+          </div>
+        </div>
+      <a href="">
+        <div class="big_img">
+          <p class="count_time"></p>
+          <img data-src="images/ongoing_04.jpg" alt="">
+        </div>
+        <div class="desc_area">
+          <div class="left_area">
+            <p class="ongoing_item_title">自然堂旗舰店</p>
+            <p class="ongoing_item_sub_title">你本来就很美</p>
+            <p class="ongoing_item_discount_desc">满<em>198</em>赠<em>168</em></p>
+          </div>
+          <div class="right_area">
+            <img data-src="images/ongoing_04_s.jpg" alt="">
+          </div>
+        </div>
+      </a></li>
+      <li>
+        <div class="loading" style="position: relative;background: #fff;width:100%;height:100%;overflow: hidden;z-index: 999;">
+          <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+          </div>
+        </div>
+      <a href="">
+        <div class="big_img">
+          <p class="count_time"></p>
+          <img data-src="images/ongoing_05.jpg" alt="">
+        </div>
+        <div class="desc_area">
+          <div class="left_area">
+            <p class="ongoing_item_title">御泥坊旗舰店</p>
+            <p class="ongoing_item_sub_title">我的御用面膜</p>
+            <p class="ongoing_item_discount_desc">满<em>159</em>赠芦荟礼包</p>
+          </div>
+          <div class="right_area">
+            <img data-src="images/ongoing_05_s.jpg" alt="">
+          </div>
+        </div>
+      </a></li>
+      <li>
+        <div class="loading" style="position: relative;background: #fff;width:100%;height:100%;overflow: hidden;z-index: 999;">
+          <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+          </div>
+        </div>
+      <a href="">
+        <div class="big_img">
+          <p class="count_time"></p>
+          <img data-src="images/ongoing_06.jpg" alt="">
+        </div>
+        <div class="desc_area">
+          <div class="left_area">
+            <p class="ongoing_item_title">菲诗小铺旗舰店</p>
+            <p class="ongoing_item_sub_title">韩妆护肤畅销品牌</p>
+            <p class="ongoing_item_discount_desc">满<em>109</em>赠滋养旅行袋</p>
+          </div>
+          <div class="right_area">
+            <img data-src="images/ongoing_06_s.jpg" alt="">
+          </div>
+        </div>
+      </a></li>
+      <li>
+        <div class="loading" style="position: relative;background: #fff;width:100%;height:100%;overflow: hidden;z-index: 999;">
+          <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+          </div>
+        </div>
+      <a href="">
+        <div class="big_img">
+          <p class="count_time"></p>
+          <img data-src="images/ongoing_07.jpg" alt="">
+        </div>
+        <div class="desc_area">
+          <div class="left_area">
+            <p class="ongoing_item_title">美宝莲旗舰店</p>
+            <p class="ongoing_item_sub_title">美就现在</p>
+            <p class="ongoing_item_discount_desc">满<em>99</em>赠bb霜体验套</p>
+          </div>
+          <div class="right_area">
+            <img data-src="images/ongoing_07_s.jpg" alt="">
+          </div>
+        </div>
+      </a></li>
+      <li>
+        <div class="loading" style="position: relative;background: #fff;width:100%;height:100%;overflow: hidden;z-index: 999;">
+          <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+          </div>
+        </div>
+      <a href="">
+        <div class="big_img">
+          <p class="count_time"></p>
+          <img data-src="images/ongoing_08.jpg" alt="">
+        </div>
+        <div class="desc_area">
+          <div class="left_area">
+            <p class="ongoing_item_title">玛丽黛佳旗舰店</p>
+            <p class="ongoing_item_sub_title">新艺术彩妆品牌</p>
+            <p class="ongoing_item_discount_desc">满<em>89</em>赠轻雾感唇膏</p>
+          </div>
+          <div class="right_area">
+            <img data-src="images/ongoing_08_s.jpg" alt="">
+          </div>
+        </div>
+      </a></li>
+      <li>
+        <div class="loading" style="position: relative;background: #fff;width:100%;height:100%;overflow: hidden;z-index: 999;">
+          <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+          </div>
+        </div>
+      <a href="">
+        <div class="big_img">
+          <p class="count_time"></p>
+          <img data-src="images/ongoing_09.jpg" alt="">
+        </div>
+        <div class="desc_area">
+          <div class="left_area">
+            <p class="ongoing_item_title">姬芮旗舰店</p>
+            <p class="ongoing_item_sub_title">青春肌肤“无穷尽”</p>
+            <p class="ongoing_item_discount_desc">满<em>199</em>赠<em>199</em>礼包</p>
+          </div>
+          <div class="right_area">
+            <img data-src="images/ongoing_09_s.jpg" alt="">
+          </div>
+        </div>
+      </a></li>
+      <li>
+        <div class="loading" style="position: relative;background: #fff;width:100%;height:100%;overflow: hidden;z-index: 999;">
+          <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+          </div>
+        </div>
+      <a href="">
+        <div class="big_img">
+          <p class="count_time"></p>
+          <img data-src="images/ongoing_10.jpg" alt="">
+        </div>
+        <div class="desc_area">
+          <div class="left_area">
+            <p class="ongoing_item_title">佰草集旗舰店</p>
+            <p class="ongoing_item_sub_title">中草药高端护理品牌</p>
+            <p class="ongoing_item_discount_desc">满<em>108</em>赠<em>196</em>礼包</p>
+          </div>
+          <div class="right_area">
+            <img data-src="images/ongoing_10_s.jpg" alt="">
+          </div>
+        </div>
+      </a></li>
+    </ul>
+  </div>
+ </section>
+  <footer style="overflow: hidden;background: #fff;">
+    <div class="footer_top  center_box">
+      <ul>
+        <li><a href="#">
+            <div class="fot_pic"></div>
+            <h3>值得信赖美妆电商</h3>
+            <p>四千万用户信赖 </p>
+          </a></li>
+        <li><a href="#">
+            <div class="fot_pic"></div>
+            <h3>成功在美上市</h3>
+            <p>股票代码NYSE:JMEI</p>
+          </a></li>
+        <li><a href="#">
+            <div class="fot_pic"></div>
+            <h3>品牌防伪码</h3>
+            <p>支持品牌官网验真</p>
+          </a></li>
+        <li><a href="#">
+            <div class="fot_pic"></div>
+            <h3>30天无理由退货</h3>
+            <p>只要不满意无理由退货 </p>
+          </a></li>
+        <li><a href="#">
+            <div class="fot_pic"></div>
+            <h3>百万用户口碑</h3>
+            <p>帮你只选对的,不选贵的 </p>
+          </a></li>
+        <li><a href="#">
+            <div class="fot_pic"></div>
+            <h3>订单闪电发货</h3>
+            <p>1.5小时订单急速出库</p>
+          </a></li>
+        <li><a href="#">
+            <div class="fot_pic"></div>
+            <h3>大牌明星热荐</h3>
+            <p>打造精致明星脸</p>
+          </a></li>
+      </ul>
+    </div>
+    <div class="footer_link  center_box">
+      <div class="footer_link_left">
+        <ul>
+          <li>
+            <h5>服务保障</h5>
+            <p>品牌真品防伪码</p>
+            <p>正品保证</p>
+            <p>30天无条件退货</p>
+            <p>7×24小时客服服务</p>
+          </li>
+          <li>
+            <h5>使用帮助</h5>
+            <p>新手指南</p>
+            <p>常见问题</p>
+            <p>帮助中心</p>
+            <p>用户协议</p>
+          </li>
+          <li>
+            <h5>支付方式</h5>
+            <p>货到付款</p>
+            <p>在线支付</p>
+            <p>余额支付</p>
+            <p>现金券支付</p>
+          </li>
+          <li>
+            <h5>配送方式</h5>
+            <p>包邮政策</p>
+            <p>配送说明</p>
+            <p>运费说明</p>
+            <p>验货签收</p>
+          </li>
+          <li>
+            <h5>售后服务</h5>
+            <p>正品承诺</p>
+            <p>售后咨询</p>
+            <p>退货政策</p>
+            <p>退货办理</p>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_link_right">
+        <ul>
+          <li>
+            <h5>手机聚美</h5>
+            <div></div>
+            <p>下载移动客户端</p>
+          </li>
+          <li>
+            <h5>聚美微信</h5>
+            <div></div>
+            <p>聚美官方微信</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_pic"></div>
+    <div class="footer_content">
+      <div class="center_box">
+        <ul>
+          <li><a href="#">关于聚美优品</a></li>
+          <li><a href="#">INVESTOR RELATIONS</a></li>
+          <li><a href="#">商家入驻</a></li>
+          <li><a href="#">获取更新</a></li>
+          <li><a href="#">加入聚美</a></li>
+          <li><a href="#">品牌合作专区</a></li>
+          <li><a href="#">网站联盟</a></li>
+          <li><a href="html/newslist.html">媒体报道</a></li>
+          <li><a href="#">商务合作</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_end">
+      <div class="center_box01">
+        <p>COPYRIGHT © 2010-2017 北京创锐文化传媒有限公司 JUMEI.COM 保留一切权利。 客服热线：400-123-8888 </br>京公网安备 11010102001226 | 京ICP证111033号 | 食品流通许可证 SP1101051110165515（1-1） | 营业执照
+        </p>
+        <ul>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+	<!-- <div class="left_aside">
+    <ul>
+      <li><a href="#" style="padding-top:35%"><span>聚美</span><span>首页</span></a></li>
+      <li><a href="#"><span></span>每日必看</a></li>
+      <li><a href="#"><span></span>上新单品</a></li>
+      <li><a href="#"><span></span>品牌团<i></i></a></li>
+    </ul>
+  </div> -->
+	<div class="right_aside">
+		<a href="#" class="user"><span></span></a>
+		<a href="#"><span></span><p>购物车</p><span class="cart_num">0</span></a>
+		<a href="#" class="wealth"><span></span>
+			<div class="ibar_wealth_tooltip">我的财产<s class="icon_arrow_right_black"></s></div>
+		</a>
+		<a href="#" class="love"><span></span>
+			<div class="ibar_wealth_tooltip">我的心愿单<s class="icon_arrow_right_black"></s></div>
+		</a>
+		<a href="#" class="seed"><span></span>
+			<div class="ibar_wealth_tooltip">我看过的<s class="icon_arrow_right_black"></s></div>
+		</a>
+		<a href="#"><span></span></a>
+		<a href="#" class="kefuzhongxin"><span></span>
+			<div class="ibar_wealth_tooltip">客服中心<s class="icon_arrow_right_black"></s></div>
+		</a>
+		<div class="ibar_login_box">
+			<div class="avatar_box">
+				<p class="avatar_imgbox">
+					<img src="images/avatar_nonelogin.jpg" alt="头像" width="62" height="62">
+				</p>
+				<p>你好！请&nbsp;<a href="#">登录</a>&nbsp;|&nbsp;<a href="#">注册</a></p>
+		  </div>
+		  <div class="login_btn_box">
+		  	<a href="#" class="login_order" target="_blank">我的订单</a>
+		  	<a href="#" class="login_favorite" target="_blank">我的收藏</a>
+		  </div>
+		  <s class="icon_arrow_white"></s>
+		  <a href="javascript:;" class="ibar_close_btn" title="关闭"></a>
+		  </div>
+	</div>
+	<div class="to_top"></div>
+</body>
+</html>
