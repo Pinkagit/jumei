@@ -350,7 +350,7 @@ window.onload=function(){
 		innerBox[index].style.display='block';
 	}
 	document.getElementById('sk2').onclick=function(){
-		window.open('../html/聚美优品产品列表.html');
+		window.open('../html/productslist.html');
 	}
 	
 }
